@@ -270,7 +270,7 @@ body {
 
 
 @media (min-width: 768px) and (max-width: 1200px) {
-    .nav-holder {
+    .menu__button {
         display: none;
     }
     .greetings-text-holder h1 {
@@ -336,13 +336,15 @@ body {
 
 @media (max-width: 767px) {
     .menu__button {
-        width: 40px;
-    }
-    .nav-holder {
         display: none;
     }
+    /*
     .pagination-box {
-        padding-right: 50px;
+        padding-right: 50px; //отступ ссылки назад
+    } */
+    .pagination-box {
+        display: block;
+        text-align: center;
     }
     .greetings-box {
         display: block;
@@ -410,6 +412,12 @@ body {
         padding-left: 0;
         max-width: 95%;
         margin: 0 auto;
+    }
+    .nav-holder a {
+        padding-left: 10px;
+    }
+    .back-link {
+        padding-right: 40px;
     }
 }
 
