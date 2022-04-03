@@ -1,0 +1,596 @@
+@font-face {
+    font-family: 'Heebo-Medium';
+    src: url(../fonts/Heebo/Heebo-Medium.ttf);
+}
+@font-face {
+    font-family: 'Heebo-Bold';
+    src: url(../fonts/Heebo/Heebo-Bold.ttf);
+}
+@font-face {
+    font-family: 'Heebo-Regular';
+    src: url(../fonts/Heebo/Heebo-Regular.ttf);
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #21243D;
+}
+body {
+    max-width: 100%;
+}
+.pagination-box {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+    padding-top: 30px;
+}
+.nav-holder a {
+    padding-left: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Heebo-Medium';
+    font-weight: 500;
+}
+.nav-holder a:first-child {
+    padding-left: 0;
+}
+.greetings-box {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-around;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.greetings-text-holder {
+    max-width: 41%;
+}
+.greetings-text-holder h1 {
+    font-size: 44px;
+    font-weight: 700;
+    font-family: 'Heebo-Bold';
+}
+.greetings-text-holder p {
+    font-size: 16px;
+    font-family: 'Heebo-Regular';
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.greetings-photo-holder {
+    order: 1;
+}
+.greetings-btn {
+    padding: 10px 20px;
+    background-color: #FF6464;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Heebo-Medium';
+    font-size: 20px;
+}
+.greetings-btn:hover {
+    cursor: pointer;
+}
+.greetings-photo {
+    box-shadow: -12px 20px 4px #edf7fa;
+    border-radius: 50%;
+    width: 250px;
+}
+.posts-row {
+    background-color: #EDF7FA;
+}
+.posts-box {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.posts-name-link-holder {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin: 0 auto;
+    max-width: 1055px;
+}
+.posts-name h3 {
+    font-family: 'Heebo-Regular';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 66px;
+}
+.posts-link a{
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Heebo-Regular';
+    line-height: 57px;
+    color: #00A8CC;
+}
+.posts-block {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+.post-holder {
+    max-width: 40%;
+    background-color: #FFFFFF;
+}
+.post-holder h2 {
+    padding: 40px 30px 30px;
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'Heebo-Bold';
+    line-height: 38px;
+}
+.post-data {
+    padding: 0 30px 30px 30px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Heebo-Regular';
+    line-height: 26px;
+}
+.post-text {
+    padding: 0 30px 30px 30px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Heebo-Regular';
+    line-height: 23px;
+}
+.featured-name h3 {
+    font-family: 'Heebo-Regular';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 66px;
+}
+.featured-box {
+    max-width: 1055px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    
+}
+.featured-post-holder {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    border-bottom: 2px solid #E0E0E0;
+    padding-bottom: 15px;
+}
+.featured-text {
+    padding-left: 30px;
+}
+.featured-text h3 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Heebo-Bold';
+    line-height: 44px;
+    padding-bottom: 20px;
+}
+.featured-data {
+    padding-bottom: 20px;
+}
+.data {
+    padding: 1px 15px;
+    background-color: #142850;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: 'Heebo-Bold';
+    border-radius: 20px;
+}
+.data-text {
+    padding-left: 30px;
+    color: #8695A4;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Heebo-Regular';
+}
+.featured-article {
+    color: #21243D;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Heebo-Regular';
+    line-height: 23px;
+}
+.socials-box {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.social-holder {
+    display: flex;
+    justify-content: center;
+}
+.social-svg-link {
+    padding-left: 30px;
+}
+.social-svg-link:first-child {
+    padding-left: 0;
+}
+.social-copyright {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Heebo-Regular';
+    line-height: 20px;
+    font-weight: 400;
+}
+
+@media (min-width: 1200px) {
+.menu__button {
+    display: none;
+}
+}
+@media (min-width: 767px) and (max-width: 1200px) {
+
+}
+.menu__button:before {
+    top: 0;
+}
+.menu__button:after {
+    bottom: 0;
+}
+.menu__button {
+    width: 1.4em;
+    height: 1em;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    font-size: 25px;
+    position: relative;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+.menu__button:before, .menu__button:after {
+    content: "";
+    width: 100%;
+    height: 20%;
+    border-radius: 5px;
+    background-color: #21243D;
+    position: absolute;
+    left: 0;
+}
+.menu__button-label {
+    width: 100%;
+    height: 20%;
+    margin-top: -0.1em;
+    border-radius: 5px;
+    background-color: #21243D;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+
+
+/*Планшет*/
+
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .nav-holder {
+        display: none;
+    }
+    .greetings-text-holder h1 {
+        font-size: 30px;
+    }
+    .greetings-text-holder p {
+        font-size: 21px;
+    }
+    .greetings-btn {
+        font-size: 16px;
+    }
+    .posts-name h3 {
+        font-size: 30px;
+    }
+    .posts-link a {
+        font-size: 21px;
+    }
+    .post-holder h2 {
+        font-size: 30px;
+    }
+    .post-data {
+        font-size: 17px;
+    }
+    .post-text {
+        font-size: 21px;
+        line-height: 28px;
+    }
+    .pagination-box {
+        padding-right: 50px;
+    }
+    .greetings-box {
+        max-width: 90%;
+    }
+    .greetings-text-holder {
+        max-width: 54%;
+    }
+    .posts-box {
+        max-width: 95%;
+    }
+    .posts-name-link-holder {
+        max-width: 885px;
+    }
+    .featured-post-holder {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .post-holder {
+        max-width: 48%;
+    }
+    .featured-box {
+        max-width: 95%;
+    }
+    .posts-block {
+        max-width: 100%;
+        justify-content: space-between;
+    }
+}
+
+
+/*Мобилка*/
+
+
+
+@media (max-width: 767px) {
+    .menu__button {
+        width: 40px;
+    }
+    .nav-holder {
+        display: none;
+    }
+    .pagination-box {
+        padding-right: 50px;
+    }
+    .greetings-box {
+        display: block;
+        padding-bottom: 60px;
+        padding-top: 70px;
+    }
+    .greetings-photo-holder {
+        margin: 0 auto;
+        width: max-content;
+    }
+    .greetings-text-holder {
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 30px;
+        max-width: 500px;
+    }
+    .greetings-text-holder h1 {
+        font-size: 40px;
+        line-height: 43px;
+    }
+    .greetings-text-holder p {
+        font-size: 18px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .greetings-btn {
+        font-size: 18px;
+    }
+    .posts-name {
+        max-width: fit-content;
+        margin: 0 auto;
+    }
+    .posts-link {
+        display: none;
+    }
+    .posts-block {
+        display: block;
+        padding-bottom: 50px;
+        padding-top: 30px;
+    }
+    .post-holder {
+        background-color: #FFFFFF;
+        max-width: 90%;
+        margin: 0 auto;
+        box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+        border-radius: 4px;
+        margin-top: 50px;
+    }
+    .post-holder:first-child {
+        margin-top: 0;
+    }
+    .featured-post-holder {
+        display: block;
+    }
+    .featured-image {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .featured-image img{
+        width: -webkit-fill-available;
+    }
+    .featured-text {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 0;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+}
+
+
+/*Страница BLOG*/
+
+
+
+.marker-link {
+    color: #FF6464;
+}
+.blog-wrap {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.blog-holder {
+    max-width: 90%;
+    margin: 0 auto;
+}
+.blog-holder h2 {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 60px;
+    color: #21243D;
+    font-family: 'Heebo-Regular';
+}
+.posts-blog {
+    max-width: 60%;
+    margin: 0 auto;
+}
+.blog-text-holder {
+    padding-top: 30px;
+    border-bottom: 2px solid #E0E0E0;
+    padding-bottom: 20px;
+}
+.blog-text-holder h3{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 44px;
+    font-family: 'Heebo-Medium';
+}
+.blog-data {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    font-family: 'Heebo-Regular';
+    padding-top: 15px;
+}
+.text-marker {
+    color: #8695A4;
+}
+.blog-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Heebo-Regular';
+    padding-top: 15px;
+}
+.back-link {
+    padding-right: 50px;
+}
+
+/*Планшет*/
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .posts-blog {
+        max-width: 85%;
+        margin: 0 auto;
+    }
+}
+
+
+
+/*Мобилка*/
+
+
+
+@media (max-width: 767px) {
+    .posts-blog {
+        max-width: 100%;
+    }
+    .blog-wrap {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+}
+
+
+/*Works page*/
+
+
+.featured-box h2{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 60px;
+    color: #21243D;
+    font-family: 'Heebo-Regular';
+    padding-bottom: 30px;
+    padding-top: 100px;
+}
+.works-row {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.works-box {
+    max-width: 90%;
+    margin: 0 auto;
+}
+.works-holder {
+    max-width: 60%;
+    margin: 0 auto;
+}
+.works-holder h2 {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 60px;
+    color: #21243D;
+    font-family: 'Heebo-Regular';
+}
+.works-post-holder {
+    display: flex;
+    padding-top: 50px;
+    border-bottom: 2px solid #E0E0E0;
+    padding-bottom: 30px;
+}
+.works-text {
+    padding-left: 30px;
+}
+.works-text h3 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Heebo-Bold';
+    line-height: 44px;
+    padding-bottom: 20px;
+}
+.works-data {
+    padding-bottom: 20px;
+}
+.works-article {
+    color: #21243D;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Heebo-Regular';
+    line-height: 23px;
+}
+
+
+
+/*Планшет*/
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .works-holder {
+        max-width: 100%;
+    }
+}
+
+
+
+/*Мобилка*/
+
+
+
+@media (max-width: 767px) {
+    .works-post-holder {
+        display: block;
+        padding-top: 30px;
+    }
+    .works-holder {
+        max-width: 100%;
+    }
+    .works-row {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .works-image img {
+        width: 100%;
+    }
+    .works-text {
+        padding-left: 0;
+        padding-top: 15px;
+    }
+}
